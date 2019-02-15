@@ -12,46 +12,75 @@ header
   text-shadow: 2px 2px #02010a;
   border-radius: 10px;
 }
+header h1{
+  width: 50%;
+  float: left;
+}
 nav {
+  width: 50%;
   height: 100%;
+  float: right;
 }
 ul {
   list-style-type: none;
-  overflow: hidden;
-  height: 100%;
+  height: 80%;
+  float: right;
 }
 li {
   float: right;
-  display: block;
-  margin: 0px 5px;
-  padding: 15px 0px;
-  height: 100%;
+  margin: 0px 10px;
+  padding: 15px 5px;
+  height: 80%;
 }
+li a{
+  color: white;
+  text-shadow: none;
+}
+li a:visited{
+  text-decoration: none;
+}
+
 article
 {
 	box-sizing: border-box;
-	float:left;
 	height: 100%;
 	padding: 2%;
 	text-align: center;
-	height: 400px;
 }
 .columna1{
-  background-color: #91C9E8;
+  background-color: #82c3a6;
   width: 100%;
+  height: 100%;
 }
 .columna2{
-  background-color: #D1D1D1;
+  background-color: #d5c75f;
   width: 100%;
+  height: 100%;
 }
+.contenedorImagen{
+  display: flex;
+  flex-flow: row nowrap;
+}
+img{
+  height: 50%;
+}
+
 footer{
   clear: both;
   margin: 0 auto;
-  height: 100px;
   padding-top: 2%;
   padding-bottom: 2%;
-  text-align: left;
   background-color: #C6d5c5;
   color:black;
   border-radius: 10px;
+}
+div [class*="bloque"]{
+  min-height: 100%;
+  flex-basis: 50%;
+}
+.contenedorFooter{
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: left;
 }
