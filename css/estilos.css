@@ -10,6 +10,19 @@ body{
   text-align:center;
   display:inline-block;
 }
+@media (max-width:900px) {
+  body{
+    margin: 0;
+  }
+  h1{
+    color:red;
+  }
+  header{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
 
 header{
   width: 90%;
@@ -110,6 +123,18 @@ article{
 #imagen3 img:hover{
   animation-name: imagen3-animacion;
   animation-duration: 2s;
+}
+#Paisaje1 img{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+#Paisaje2, #Paisaje4, #Paisaje6 img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#Paisaje3 img{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 
 footer{
